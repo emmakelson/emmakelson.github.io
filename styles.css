@@ -1,0 +1,107 @@
+
+/* Typography */
+
+@font-face {
+  font-family: 'ppmori';
+  src: url('fonts/PPMori-Regular.woff2') format('woff2'),
+       url('fonts/PPMori-Regular.woff') format('woff'),
+       url('fonts/PPMori-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ppmori';
+  src: url('fonts/PPMori-SemiBold.woff2') format('woff2'),
+       url('fonts/PPMori-SemiBold.woff') format('woff'),
+       url('fonts/PPMori-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, body {
+  font-family: ppmori, Arial, sans-serif;
+  font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: -3px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 60px;
+  line-height: 64px;
+}
+
+a {
+  color: #000;
+}
+
+a:hover {
+  color: #ce4c03;
+}
+
+.button {
+  padding: 12px 0;
+}
+
+.subtitle {
+  font-size: 36px;
+}
+
+.footnote p {
+  font-size: 14px;
+}
+
+.hero p {
+  font-size: 16px;
+  position: absolute;
+  top: 80px;
+  left: 70px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* Layout */
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.subtitle {
+  max-width: 640px;
+  margin: 0 auto;
+  margin-bottom: 50px;;
+}
+
+.hero {
+  max-width: 640px;
+  position: relative;
+}
+
+.hero img {
+  width: 100%;
+  max-width: 480px;
+  display: block;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.content {
+  padding: 50px 0;
+  max-width: 480px;;
+}
+
+.footnote {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
