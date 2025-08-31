@@ -23,6 +23,7 @@ p, a, body {
   font-family: amiri, Georgia, Times, "Times New Roman", serif;
   font-size: 16px;
   line-height: 1.5;
+  color: #10231A;
 }
 
 h1, h2, h3, h4, h5, h6, .hero p, .button {
@@ -31,6 +32,7 @@ h1, h2, h3, h4, h5, h6, .hero p, .button {
   font-weight: 800;
   text-transform: uppercase;
   line-height: 1.25;
+  color: #10231A;
 }
 
 h1 {
@@ -60,7 +62,7 @@ a:hover {
 }
 
 .subtitle {
-  font-size: 36px;
+  font-size: 28px;
 }
 
 .footnote p {
