@@ -2,37 +2,49 @@
 /* Typography */
 
 @font-face {
-  font-family: 'ppmori';
-  src: url('fonts/PPMori-Regular.woff2') format('woff2'),
-       url('fonts/PPMori-Regular.woff') format('woff'),
-       url('fonts/PPMori-Regular.ttf') format('truetype');
-  font-weight: 400;
+  font-family: 'poppins';
+  src: url('fonts/Poppins-ExtraBold.woff2') format('woff2'),
+       url('fonts/Poppins-ExtraBold.woff') format('woff'),
+       url('fonts/Poppins-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'ppmori';
-  src: url('fonts/PPMori-SemiBold.woff2') format('woff2'),
-       url('fonts/PPMori-SemiBold.woff') format('woff'),
-       url('fonts/PPMori-SemiBold.ttf') format('truetype');
-  font-weight: 600;
+  font-family: 'amiri';
+  src: url('fonts/Amiri-Regular.woff2') format('woff2'),
+       url('fonts/Amiri-Regular.woff') format('woff'),
+       url('fonts/Amiri-Regular.ttf') format('truetype');
+  font-weight: 400;
   font-style: normal;
 }
 
-h1, h2, h3, h4, h5, h6, p, a, body {
-  font-family: ppmori, Arial, sans-serif;
+p, a, body {
+  font-family: amiri, Georgia, Times, "Times New Roman", serif;
   font-size: 16px;
+  line-height: 1.5;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  letter-spacing: -3px;
-  font-weight: 600;
+h1, h2, h3, h4, h5, h6, .hero p, .button {
+  font-family: poppins, Arial, Helvetica, Arial, sans-serif;
+  letter-spacing: 0.2em;
+  font-weight: 800;
   text-transform: uppercase;
+  line-height: 1.25;
 }
 
 h1 {
-  font-size: 60px;
-  line-height: 64px;
+  font-size: 36x;
+}
+
+.hero p {
+  letter-spacing: 0.2em;
+  font-size: 16px;
+  position: absolute;
+  top: 80px;
+  left: 70px;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 a {
@@ -40,7 +52,7 @@ a {
 }
 
 a:hover {
-  color: #ce4c03;
+  color: #D48B96;
 }
 
 .button {
@@ -55,16 +67,11 @@ a:hover {
   font-size: 14px;
 }
 
-.hero p {
-  font-size: 16px;
-  position: absolute;
-  top: 80px;
-  left: 70px;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
 /* Layout */
+
+body {
+  background-color: #FFF9F5;
+}
 
 img {
   max-width: 100%;
@@ -73,6 +80,7 @@ img {
 .container {
   max-width: 800px;
   margin: 0 auto;
+  margin-top: 100px;
   padding: 0 16px;
 }
 
@@ -101,7 +109,7 @@ img {
 }
 
 .footnote {
-  max-width: 400px;
+  max-width: 520px;
   margin: 0 auto;
   padding: 100px 0;
 }
